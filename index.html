@@ -20,16 +20,53 @@
 		<label for="name-label">Name:
 			<input type="text" id="name" id="name-label" placeholder="Please, enter your name here">
 		</label>
-
-		<br><br>
+		<br>
 		<label for="email-label">E-mail:
 			<input type="text" id="email" id="email-label" placeholder="Now enter your e-mail address">
 		</label>
-
-		<br><br>
+		<br>
 		<label for="number-label">Age:
-			<input type="text" id="number" id="number-label" placeholder="Please, enter your age">
+			<input type="number" min="18" max="90" id="number-label" placeholder="Please, enter your age">
 		</label>
+		<p id="question">Did the product meet your expectations?</p>
+		<label for="yes">Yes</label>
+		<input type="radio" id="yes" name="option">
+		<label for="no">No</label>
+		<input type="radio" id="no" name="option">
+		<p id="question">What is your overall satisfaction level with the product?</p>
+		<select id="dropdowne">
+			<option>Very satisfied</option>
+			<option>Satisfied</option>
+			<option>Dissatisfied</option>
+			<option>Very unsatisfied</option>
+		</select>
+		<fieldset>
+			<legend>
+				<p id="question">What aspects of this product do you like most?</p>
+			</legend>
+			<div>
+				<label for="design">Design</label>
+				<input type="checkbox" id="design" value="Design" name="Design">
+			</div>
+			<div>
+				<label for="functionality">Functionality</label>
+				<input type="checkbox" id="functionality" value="functionality" name="functionality">
+			</div>
+			<div>
+				<label for="durability">Durability</label>
+				<input type="checkbox" id="durability" value="durability" name="durability">
+			</div>
+			<div>
+				<label for="price">Price</label>
+				<input type="checkbox" id="price" value="price" name="price">
+			</div>
+			<div>
+				<label for="others">Others (specify)
+					<input type="checkbox" id="others" value="others" name="others">
+					<input type="text" placeholder="Enter the other option">
+				</label>
+			</div>
+		</fieldset>
 	</form>
 
 </body>
