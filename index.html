@@ -17,24 +17,19 @@
 	</p>
 
 	<form id="survey-form">
-		<label for="name-label">Name:
-			<input type="text" id="name" id="name-label" placeholder="Please, enter your name here">
-		</label>
-		<br>
-		<label for="email-label">E-mail:
-			<input type="text" id="email" id="email-label" placeholder="Now enter your e-mail address">
-		</label>
-		<br>
-		<label for="number-label">Age:
-			<input type="number" min="18" max="90" id="number-label" placeholder="Please, enter your age">
-		</label>
-		<p id="question">Did the product meet your expectations?</p>
-		<label for="yes">Yes</label>
-		<input type="radio" id="yes" name="option">
-		<label for="no">No</label>
+		<label for="name-label">*Name:</label>
+		<input required type="text" id="name" id="name-label" placeholder="Please, enter your name here"><br>
+		<label for="email-label">*E-mail:</label>
+		<input required type="email" id="email" id="email-label" placeholder="Now enter your e-mail address"><br>
+		<label for="number-label">Age:</label>
+		<input type="number" min="18" max="90" id="number-label" placeholder="Please, enter your age">
+		<p id="question1">*Did the product meet your expectations?</p>
+		<input required type="radio" id="yes" name="option">
+		<label for="yes">Yes</label><br>
 		<input type="radio" id="no" name="option">
-		<p id="question">What is your overall satisfaction level with the product?</p>
-		<select id="dropdowne">
+		<label for="no">No</label>
+		<p id="question1">*What is your overall satisfaction level with the product?</p>
+		<select required id="dropdowne">
 			<option>Very satisfied</option>
 			<option>Satisfied</option>
 			<option>Dissatisfied</option>
@@ -42,7 +37,7 @@
 		</select>
 		<fieldset>
 			<legend>
-				<p id="question">What aspects of this product do you like most?</p>
+				<p id="question2">What aspects of this product do you like most?</p>
 			</legend>
 			<div>
 				<label for="design">Design</label>
@@ -67,6 +62,11 @@
 				</label>
 			</div>
 		</fieldset>
+		<p id="question3">Your opinion is important to us. Is there anything else you would like to say?</p>
+		<label for="comment">Comment:</label>
+		<textarea rows="10" cols="50" maxlength="500" placeholder="Enter your comment here (maximum 500 characters allowed)"
+			id="comment"></textarea>
+		<input type="submit" id="submit">
 	</form>
 
 </body>
