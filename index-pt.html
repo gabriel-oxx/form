@@ -1,0 +1,72 @@
+ <!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</Pesquisa de opinião>
+</head>
+
+<body>
+	<h1 id="title">
+		Colabore conosco
+	</h1>
+	<p id="description">
+		Esta pesquisa busca compreender o nível de satisfação dos nossos clientes com os nossos produtos. Por favor,
+		responda a esta pesquisa para que possamos continuar a melhorar e entregar o que você precisa.
+	</p>
+	<form id="survey-form">
+		<label for="name-label">*Nome:</label>
+		<input required type="text" id="name" id="name-label" placeholder="Por favor, insira seu nome aqui"><br>
+		<label for="email-label">*E-mail:</label>
+		<input required type="email" id="email" id="email-label" placeholder="Agora insira seu endereço de e-mail"><br>
+		<label for="number-label">Idade:</label>
+		<input type="number" min="18" max="90" id="number-label" placeholder="Por favor, insira sua idade">
+		<p id="question1">*O produto atendeu às suas expectativas?</p>
+		<input required type="radio" id="yes" name="option">
+		<label for="yes">Sim</label><br>
+		<input type="radio" id="no" name="option">
+		<label for="no">Não</label>
+		<p id="question2">*Qual é o seu nível geral de satisfação com o produto?</p>
+		<select required id="dropdowne">
+			<option>Muito satisfeito(a)</option>
+			<option>Satisfeito(a)</option>
+			<option>Insatisfeito(a)</option>
+			<option>Muito insatisfeito(a)</option>
+		</select>
+		<fieldset>
+			<legend>
+				<p id="question3">De quais características deste produto você mais gosta?</p>
+			</legend>
+			<div>
+				<label for="design">Design</label>
+				<input type="checkbox" id="design" value="Design" name="Design">
+			</div>
+			<div>
+				<label for="functionality">Funcionalidade</label>
+				<input type="checkbox" id="functionality" value="functionality" name="functionality">
+			</div>
+			<div>
+				<label for="durability">Durabilidade</label>
+				<input type="checkbox" id="durability" value="durability" name="durability">
+			</div>
+			<div>
+				<label for="price">Preço</label>
+				<input type="checkbox" id="price" value="price" name="Preço">
+			</div>
+			<div>
+				<label for="others">Outros (especifique)
+					<input type="checkbox" id="others" value="others" name="Outros">
+					<input type="text" placeholder="Insira outra opção">
+				</label>
+			</div>
+		</fieldset>
+		<p id="question4">Sua opinião é importante para nós. Há mais algo que você gostaria de dizer?</p>
+		<label for="comment">Comente:</label>
+		<textarea rows="10" cols="50" maxlength="500"
+			placeholder="Insira seu comentário aqui (máximo de 500 caracteres permitidos)" id="comment"></textarea>
+		<input type="submit" id="submit">
+	</form>
+</body>
+
+</html>
