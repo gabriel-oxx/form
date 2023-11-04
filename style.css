@@ -1,0 +1,107 @@
+body {
+  background-color: #f7f7f7;
+  color: #292929;
+}
+
+#title {
+  color: #292929;
+  font-size: 24 px;
+  font-weight: 700;
+  text-align: center;
+}
+
+#description {
+  color: #292929;
+  font-weight: 400;
+  text-align: justify;
+}
+
+form {
+  border: 1 px solid #ccc;
+  margin: 0 auto;
+  padding: 10 px;
+  width: 100%;
+}
+
+form input {
+  font-size: 14 px;
+  color: #292929;
+  font-weight: 400;
+  border: 1px solid #ccc;
+  margin: 0 0 10px 0;
+  padding: 5px;
+}
+
+label {
+  color: #292929;
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0 0 10px 0;
+  position: relative;
+  text-align: left;
+  top: -20px;
+}
+
+input:invalid + .error-message {
+  color: #ff0000;
+  font-align: left;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+input[type="radio"] {
+  border: 1px solid #ccc;
+  margin: 0 0 10px 0;
+  padding: 5px;
+}
+
+input[type="radio"]:checked {
+  background-color: #292929;
+  color: #fff;
+}
+
+input[type="checkbox"] {
+  border: 1px solid #ccc;
+  margin: 0 0 10px 0;
+  padding: 5px;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #292929;
+  color: #fff;
+  border-radius: 5px;
+}
+
+p {
+  font-size: 16px;
+  margin: 10px 0;
+  padding: 5px;
+}
+
+#question1 {
+  color: #ff0000;
+}
+
+#question2 {
+  color: #00ff00;
+}
+
+#question3 {
+  color: #0000ff;
+}
+
+#question4 {
+  color: #008000;
+}
+
+#submit {
+  background-color: #292929;
+  color: #00ff00;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  width: 100px;
+}
